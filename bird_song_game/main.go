@@ -490,7 +490,7 @@ func playAudioFile(filename string) error {
 
 func getRecording(birdName string, client *http.Client) (*Recording, error) {
 	// Query Xeno-canto API for ONLY highest quality (A) recordings
-	baseURL := "https://xeno-canto.org/api/2/recordings"
+	baseURL := "https://xeno-canto.org/api/3/recordings"
 	
 	// First try with quality A
 	query := url.QueryEscape(birdName + " q:A")
